@@ -1,12 +1,16 @@
 const fs = require('fs');
 const path = require('path');
 
-const src = 'C:\\Users\\dell\\.gemini\\antigravity\\brain\\d970f3ee-786a-4302-9ee8-8aac7f2b5852\\media__1777817764738.jpg';
-const dest = 'C:\\Users\\dell\\.gemini\antigravity\\scratch\\prof-salawu-portfolio\\public\\prof-salawu.jpg';
+const src = path.join(__dirname, 'profSALAWU.jpg');
+const dest = path.join(__dirname, 'public', 'prof-salawu.jpg');
 
 try {
-    fs.copyFileSync(src, dest);
-    console.log('Successfully copied image');
+    if (fs.existsSync(src)) {
+        fs.copyFileSync(src, dest);
+        console.log('Successfully copied image from root to public/');
+    } else {
+        console.error('Source file not found at:', src);
+    }
 } catch (err) {
     console.error('Error copying file:', err);
 }
