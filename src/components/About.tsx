@@ -85,26 +85,24 @@ export default function About() {
 
           {/* Stats Column */}
           <motion.div 
-            initial={{ opacity: 0, x: 30 }}
-            whileInView={{ opacity: 1, x: 0 }}
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            transition={{ delay: 0.3 }}
-            className="grid sm:grid-cols-2 gap-4"
+            className="grid grid-cols-2 gap-4"
           >
             {stats.map((stat, idx) => (
               <motion.div 
                 key={idx}
-                whileHover={{ y: -5 }}
-                className={`bg-white dark:bg-slate-900 p-6 rounded-xl shadow-sm border border-slate-100 dark:border-slate-800 flex flex-col items-center text-center ${idx === 0 ? 'sm:col-span-2' : ''}`}
+                className={`bg-white dark:bg-slate-900 p-4 md:p-6 rounded-xl shadow-sm border border-slate-100 dark:border-slate-800 flex flex-col items-center text-center ${idx === 0 ? 'col-span-2' : ''}`}
               >
-                <div className="w-12 h-12 rounded-full bg-blue-50 dark:bg-blue-900/30 flex items-center justify-center mb-4 text-primary dark:text-sky-400">
-                  <stat.icon className="w-6 h-6" />
+                <div className="w-10 h-10 md:w-12 md:h-12 rounded-full bg-blue-50 dark:bg-blue-900/30 flex items-center justify-center mb-3 md:mb-4 text-primary dark:text-sky-400">
+                  <stat.icon className="w-5 h-5 md:w-6 md:h-6" />
                 </div>
-                <div className="text-3xl font-bold text-slate-900 dark:text-white mb-2 flex items-baseline justify-center">
+                <div className="text-2xl md:text-3xl font-bold text-slate-900 dark:text-white mb-1 md:mb-2 flex items-baseline justify-center">
                   {stat.value}
-                  <span className="text-secondary text-xl">{stat.suffix}</span>
+                  <span className="text-secondary text-lg md:text-xl">{stat.suffix}</span>
                 </div>
-                <div className="text-sm font-medium text-slate-600 dark:text-slate-400">
+                <div className="text-[10px] md:text-sm font-medium text-slate-600 dark:text-slate-400 uppercase tracking-wider">
                   {stat.label}
                 </div>
               </motion.div>

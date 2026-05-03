@@ -121,7 +121,8 @@ export default function Supervision() {
                     <motion.div 
                       key={idx}
                       initial={{ opacity: 0, y: 10 }}
-                      animate={{ opacity: 1, y: 0 }}
+                      whileInView={{ opacity: 1, y: 0 }}
+                      viewport={{ once: true, margin: "50px" }}
                       className="p-4 bg-white dark:bg-slate-900 border border-slate-100 dark:border-slate-800 rounded-lg flex gap-4 items-start"
                     >
                       <ScrollText className="w-4 h-4 text-slate-400 shrink-0 mt-1.5" />

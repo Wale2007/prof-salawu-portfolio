@@ -11,7 +11,7 @@ export default function PageLoader() {
     setMounted(true);
     const timer = setTimeout(() => {
       setLoading(false);
-    }, 1000); // Faster load
+    }, 600); // Super fast load
     return () => clearTimeout(timer);
   }, []);
 
