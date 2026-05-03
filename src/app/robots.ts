@@ -7,6 +7,6 @@ export default function robots(): MetadataRoute.Robots {
       allow: '/',
       disallow: '/private/',
     },
-    sitemap: 'https://prof-salawu.vercel.app/sitemap.xml',
+    sitemap: 'https://sosalawu.vercel.app/sitemap.xml',
   }
 }
