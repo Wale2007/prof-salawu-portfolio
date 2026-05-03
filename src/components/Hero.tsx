@@ -75,11 +75,13 @@ export default function Hero() {
               <div className="absolute inset-0 rounded-full bg-gradient-to-tr from-primary via-secondary to-sky-200 animate-spin-slow" style={{ padding: '4px' }}>
                 <div className="w-full h-full bg-white dark:bg-slate-900 rounded-full p-2">
                   <div className="w-full h-full bg-slate-100 dark:bg-slate-800 rounded-full overflow-hidden flex items-center justify-center border-4 border-white dark:border-slate-900 shadow-xl">
-                    {/* Placeholder image representation */}
-                    <div className="text-slate-300 dark:text-slate-600 text-center">
-                      <svg className="w-32 h-32 mx-auto mb-2" fill="currentColor" viewBox="0 0 24 24">
-                        <path d="M24 20.993V24H0v-2.996A14.977 14.977 0 0112.004 15c4.904 0 9.26 2.354 11.996 5.993zM16.002 8.999a4 4 0 11-8 0 4 4 0 018 0z" />
-                      </svg>
+                    {/* Professional Portrait */}
+                    <div className="w-full h-full relative">
+                      <img 
+                        src="/prof-salawu.jpg" 
+                        alt="Professor Sule Ola Salawu" 
+                        className="w-full h-full object-cover object-top"
+                      />
                     </div>
                   </div>
                 </div>
