@@ -115,7 +115,6 @@ export default function Hero() {
                 </div>
               </motion.div>
             </div>
-
         </div>
       </div>
     </section>
