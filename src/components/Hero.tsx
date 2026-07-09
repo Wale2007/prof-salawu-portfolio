@@ -105,7 +105,8 @@ export default function Hero() {
               <motion.div 
                 animate={{ y: [0, 5, 0] }} 
                 transition={{ repeat: Infinity, duration: 5, ease: "easeInOut", delay: 1 }}
-                className="absolute bottom-6 -right-4 md:bottom-10 md:-right-4 bg-white dark:bg-slate-800 p-2 md:p-3 rounded-xl shadow-lg border border-slate-100 dark:border-slate-700 flex items-center gap-2 md:gap-3"
+                className="absolute bottom-6 -right-4 md:bottom-10 md:-right-4 bg-white dark:bg-slate-800 p-2 md:
+                p-3 rounded-xl shadow-lg border border-slate-100 dark:border-slate-700 flex items-center gap-2 md:gap-3"
               >
                 <div className="bg-green-100 dark:bg-green-900/50 p-1.5 md:p-2 rounded-lg">
                   <span className="text-green-600 font-bold text-base md:text-lg">25+</span>
@@ -116,7 +117,6 @@ export default function Hero() {
               </motion.div>
             </div>
         </div>
-      </div>
     </section>
   );
 }
