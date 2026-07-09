@@ -3,6 +3,7 @@
 import { motion } from "framer-motion";
 import { ArrowRight, Mail } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Hero() {
   return (
@@ -116,7 +117,11 @@ export default function Hero() {
                 </div>
               </motion.div>
             </div>
+
+          </motion.div>
+
         </div>
+      </div>
     </section>
   );
 }
