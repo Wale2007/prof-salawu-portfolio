@@ -34,3 +34,14 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+
+## Reindex on Google Search
+
+After deploying changes to `https://sosalawu.vercel.app`, request a fresh crawl in Google Search Console:
+
+1. Open [Google Search Console](https://search.google.com/search-console) and select the verified `sosalawu.vercel.app` property.
+2. Open **URL inspection**, enter `https://sosalawu.vercel.app/`, and select **Request indexing**.
+3. Open **Sitemaps**, submit `sitemap.xml`, and confirm that it is processed successfully.
+4. Use **URL inspection** again after deployment to verify that Google can see the updated page and the portrait image URL.
+
+Google controls the crawl schedule and whether the portrait is shown beside a result, so the image may not appear immediately or for every search. Keep the site publicly accessible and avoid repeatedly submitting the same URL.

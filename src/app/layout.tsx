@@ -10,17 +10,37 @@ import AnimatedBackground from "@/components/AnimatedBackground";
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-sans" });
 const playfair = Playfair_Display({ subsets: ["latin"], variable: "--font-serif" });
+const siteUrl = "https://sosalawu.vercel.app";
 
 export const metadata: Metadata = {
+  metadataBase: new URL(siteUrl),
   title: "Prof. Salawu S.O | Professor of Biochemistry | FUTA",
   description: "Official portfolio of Professor Sule Ola Salawu (S.O), a leading researcher in Phytochemistry and Nutritional Biochemistry at FUTA. Mental Health Activist and Researcher.",
   keywords: ["Prof. Salawu", "Sule Ola Salawu", "S.O Salawu", "Biochemistry Professor Nigeria", "FUTA Biochemistry", "Phytochemistry Research", "Mental Health Activist Nigeria"],
   authors: [{ name: "Professor Sule Ola Salawu" }],
+  alternates: {
+    canonical: "/",
+  },
   openGraph: {
     title: "Prof. Salawu S.O | Professor of Biochemistry | FUTA",
     description: "Official academic portfolio and research of Professor Salawu.",
     type: "website",
     locale: "en_NG",
+    url: siteUrl,
+    images: [
+      {
+        url: "/prof-salawu.jpg",
+        width: 1170,
+        height: 1141,
+        alt: "Professor Sule Ola Salawu",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Prof. Salawu S.O | Professor of Biochemistry | FUTA",
+    description: "Official academic portfolio and research of Professor Salawu.",
+    images: ["/prof-salawu.jpg"],
   },
 };
 
